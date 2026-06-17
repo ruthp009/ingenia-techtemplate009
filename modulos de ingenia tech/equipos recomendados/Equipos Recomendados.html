@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingenia Tech Store</title>
+
+    <link rel="stylesheet" href="Equipos recomendados.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<!-- PANEL DEL CARRITO -->
+
+<div id="panelCarrito" class="panel-carrito">
+
+    <div class="carrito" onclick="abrirCarrito()">
+
+        <h2>Mi Carrito</h2>
+
+        <button onclick="cerrarCarrito()">✖</button>
+
+    </div>
+
+    <div id="listaCarrito"></div>
+
+    <div class="total-carrito">
+
+        <h3>
+            Total: C$
+            <span id="totalCompra">0</span>
+        </h3>
+
+    </div>
+
+</div>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Ingenia Tech Store</span>
+        </div>
+
+        <div class="buscador">
+
+            <input
+                type="text"
+                id="buscar"
+                placeholder="Buscar equipo..."
+                onkeyup="buscarProducto()">
+
+            <button type="button" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <div class="carrito">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="contadorCarrito">0</span>
+
+        </div>
+
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+
+        <h1>Equipos Recomendados para Ingeniería</h1>
+
+        <p>
+            Descubre equipos ideales para programación,
+            desarrollo web, bases de datos y proyectos tecnológicos.
+        </p>
+
+      <a href="../../pagina principal ingenia tech/parte central.html"
+   class="btn-volver">
+   Volver al Inicio
+</a>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categorias">
+
+        <div class="categoria">
+            <i class="fa-solid fa-laptop"></i>
+            <p>Laptops</p>
+        </div>
+
+        <div class="categoria">
+            <i class="fa-solid fa-desktop"></i>
+            <p>Monitores</p>
+        </div>
+
+        <div class="categoria">
+            <i class="fa-solid fa-keyboard"></i>
+            <p>Teclados</p>
+        </div>
+
+        <div class="categoria">
+            <i class="fa-solid fa-computer-mouse"></i>
+            <p>Mouse</p>
+        </div>
+
+        <div class="categoria">
+            <i class="fa-solid fa-chair"></i>
+            <p>Sillas</p>
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="productos">
+
+        <!-- LENOVO -->
+        <div class="producto">
+
+            <img src="imagenes/lenovo.jfif" alt="Laptop Lenovo">
+
+            <h3>Laptop Lenovo IdeaPad</h3>
+
+            <div class="estrellas">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="precio">
+                C$ 32,500
+            </p>
+
+           <button
+class="agregar"
+onclick="agregarCarrito('Laptop Lenovo IdeaPad', 32500, this)">
+
+                Agregar al carrito
+
+            </button>
+
+                    <button
+class="comprar"
+onclick="comprarAhora('Laptop Lenovo IdeaPad')">
+
+Comprar ahora
+
+</button>
+
+        </div>
+
+        <!-- ASUS -->
+        <div class="producto">
+
+            <img src="imagenes/asus.jfif" alt="Laptop ASUS">
+
+            <h3>Laptop ASUS VivoBook</h3>
+
+            <div class="estrellas">
+                ⭐⭐⭐⭐☆
+            </div>
+
+            <p class="precio">
+                C$ 28,900
+            </p>
+
+            <button
+                class="agregar"
+                onclick="agregarCarrito('Laptop ASUS VivoBook', 28900, this)">
+
+                Agregar al carrito
+
+            </button>
+  <button
+class="agregar"
+onclick="agregarCarrito('Laptop ASUS VivoBook', 28900, this)">
+
+Comprar ahora
+
+</button>
+        </div>
+
+        <!-- MONITOR -->
+        <div class="producto">
+
+            <img src="imagenes/monitor.jfif" alt="Monitor">
+
+            <h3>Monitor LG 24 IPS</h3>
+
+            <div class="estrellas">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="precio">
+                C$ 6,800
+            </p>
+
+            <button
+                class="agregar"
+                onclick="agregarCarrito('Monitor LG 24 IPS', 6800, this)">
+
+                Agregar al carrito
+
+            </button>
+<button
+class="agregar"
+onclick="agregarCarrito('Monitor LG 24 IPS', 6800, this)">
+
+Comprar ahora
+
+</button>
+
+        </div>
+
+        <!-- TECLADO -->
+        <div class="producto">
+
+            <img src="imagenes/teclado.jfif" alt="Teclado">
+
+            <h3>Teclado Mecánico RGB</h3>
+
+            <div class="estrellas">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="precio">
+                C$ 1,750
+            </p>
+
+            <button
+                class="agregar"
+                onclick="agregarCarrito('Teclado Mecánico RGB', 1750, this)">
+
+                Agregar al carrito
+
+            </button>
+
+            <button
+class="agregar"
+onclick="agregarCarrito('Teclado Mecánico RGB', 1750, this)">
+
+                Comprar ahora
+
+            </button>
+
+        </div>
+
+      <!-- MOUSE -->
+<div class="producto">
+
+    <img src="imagenes/mouse.jfif" alt="Mouse">
+
+    <h3>Mouse Ergonómico</h3>
+
+    <div class="estrellas">
+        ⭐⭐⭐⭐☆
+    </div>
+
+    <p class="precio">
+        C$ 850
+    </p>
+
+    <button
+        class="agregar"
+        onclick="agregarCarrito('Mouse Ergonómico', 850, this)">
+
+        Agregar al carrito
+
+    </button>
+
+    <button
+        class="comprar"
+        onclick="comprarAhora('Mouse Ergonómico')">
+
+        Comprar ahora
+
+    </button>
+
+</div>
+
+        <!-- SILLA -->
+        <div class="producto">
+
+            <img src="imagenes/silla.jfif" alt="Silla">
+
+            <h3>Silla Gamer Ergonómica</h3>
+
+            <div class="estrellas">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="precio">
+                C$ 7,900
+            </p>
+
+            <button
+                class="agregar"
+                onclick="agregarCarrito('Silla Gamer Ergonómica', 7900, this)">
+
+                Agregar al carrito
+
+            </button>
+<button
+class="comprar"
+onclick="comprarAhora('Silla Gamer Ergonómica 7900')">
+
+Comprar ahora
+
+</button>
+        </div>
+
+    </section>
+
+
+    <!-- EQUIPOS ECONÓMICOS -->
+
+<section class="economicos">
+
+    <h2>💸 Equipos Económicos para Estudiantes</h2>
+
+    <p>
+        No necesitas una computadora costosa para aprender programación.
+        Estas opciones son ideales para HTML, CSS, JavaScript, Python,
+        bases de datos y proyectos universitarios.
+    </p>
+
+    <div class="productos">
+
+        <div class="producto">
+
+            <img src="imagenes/dell.jfif" alt="Laptop Dell">
+
+
+            <h3>Dell Latitude i5</h3>
+
+            <div class="estrellas">⭐⭐⭐⭐⭐</div>
+
+            <p class="precio">C$ 8,500</p>
+
+            <button class="agregar"
+                onclick="agregarCarrito('Dell Latitude i5',8500,this)">
+                Agregar al carrito
+            </button>
+
+        </div>
+
+        <div class="producto">
+
+            <img src="imagenes/hp.jfif" alt="Laptop HP">
+
+
+            <h3>HP ProBook i5</h3>
+
+            <div class="estrellas">⭐⭐⭐⭐☆</div>
+
+            <p class="precio">C$ 10,500</p>
+
+            <button class="agregar"
+                onclick="agregarCarrito('HP ProBook i5',10500,this)">
+                Agregar al carrito
+            </button>
+
+        </div>
+
+        <div class="producto">
+
+          <img src="imagenes/minipc.jfif" alt="Mini PC">
+
+            <h3>Mini PC Intel N100</h3>
+
+            <div class="estrellas">⭐⭐⭐⭐⭐</div>
+
+            <p class="precio">C$ 7,900</p>
+
+            <button class="agregar"
+                onclick="agregarCarrito('Mini PC Intel N100',7900,this)">
+                Agregar al carrito
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONFIGURACIONES -->
+
+<section class="configuraciones">
+
+    <h2>⚙ Configuraciones Recomendadas</h2>
+
+    <div class="config-grid">
+
+        <div class="config-card">
+
+            <h3>🟢 Básico</h3>
+
+            <p>Intel i3 / Ryzen 3</p>
+
+            <p>8 GB RAM</p>
+
+            <p>SSD 256 GB</p>
+
+            <p>Ideal para HTML, CSS y JavaScript.</p>
+
+        </div>
+
+        <div class="config-card">
+
+            <h3>🟡 Intermedio</h3>
+
+            <p>Intel i5 / Ryzen 5</p>
+
+            <p>16 GB RAM</p>
+
+            <p>SSD 512 GB</p>
+
+            <p>Ideal para proyectos universitarios.</p>
+
+        </div>
+
+        <div class="config-card">
+
+            <h3>🔴 Profesional</h3>
+
+            <p>Intel i7 / Ryzen 7</p>
+
+            <p>32 GB RAM</p>
+
+            <p>SSD 1 TB</p>
+
+            <p>IA, máquinas virtuales y desarrollo avanzado.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GUIA -->
+
+<section class="guia">
+
+    <h2>🎓 ¿Qué equipo necesito?</h2>
+
+    <div class="guia-grid">
+
+        <div class="guia-card">
+            <h3>Programación Web</h3>
+            <p>8 GB RAM + SSD</p>
+        </div>
+
+        <div class="guia-card">
+            <h3>Bases de Datos</h3>
+            <p>16 GB RAM recomendados</p>
+        </div>
+
+        <div class="guia-card">
+            <h3>Ingeniería en Sistemas</h3>
+            <p>Intel i5 + 16 GB RAM</p>
+        </div>
+
+        <div class="guia-card">
+            <h3>Inteligencia Artificial</h3>
+            <p>32 GB RAM + GPU</p>
+        </div>
+
+    </div>
+   
+</section>
+
+<p class="broma-texto">
+    ¿No te alcanza para una laptop?
+    Vende un riñón aquí...
+    <br><br>
+    Ahh no te creas jjsjs 😂
+    <br>
+    Busca equipos reacondicionados o de segunda mano,
+    también sirven para aprender programación.
+</p>
+
+
+    <!-- NOTIFICACIÓN -->
+    <div id="notificacion" class="notificacion"></div>
+
+    <footer>
+
+        <p>
+            © 2026 Ingenia Tech Store | Equipos Recomendados
+        </p>
+
+    </footer>
+
+    <script src="Equipos recomendados.js"></script>
+
+</body>
+</html>

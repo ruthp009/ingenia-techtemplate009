@@ -1,0 +1,615 @@
+.hero-proyectos{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.65)
+    ),
+
+    url("https://sm.ign.com/t/ign_in/video/h/hollow-kni/hollow-knight-silksong-reveal-trailer_c512.1200.jpg");
+
+    background-size:cover;
+    background-position:center 25%;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.etiqueta{
+
+    background:#7b2cbf;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-size:.9rem;
+
+    display:inline-block;
+
+    margin-bottom:20px;
+}
+
+.hero-text h1{
+
+    font-size:4.5rem;
+
+    margin-bottom:20px;
+
+    line-height:1.1;
+}
+
+.hero-text p{
+
+    max-width:700px;
+
+    font-size:1.2rem;
+
+    color:#d6d6d6;
+
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+
+    background:#00d4ff;
+
+    color:black;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+}
+
+.btn-secondary{
+
+    border:2px solid #7b2cbf;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+}
+
+/* PROYECTO DESTACADO */
+
+.proyecto-destacado{
+
+    max-width:1300px;
+
+    margin:100px auto;
+
+    padding:40px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:center;
+}
+
+.badge{
+
+    background:#00d4ff;
+
+    color:black;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+}
+
+.info-proyecto h2{
+
+    font-size:3rem;
+
+    margin:25px 0;
+}
+
+.info-proyecto p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.info-proyecto ul{
+
+    list-style:none;
+}
+
+.info-proyecto li{
+
+    margin-bottom:15px;
+}
+
+.info-proyecto i{
+
+    color:#00d4ff;
+
+    margin-right:10px;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+
+    max-width:1200px;
+
+    margin:100px auto;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.beneficios h2{
+
+    font-size:3rem;
+
+    color:#00d4ff;
+
+    margin-bottom:15px;
+}
+
+.subtitulo{
+
+    color:#cfcfcf;
+
+    margin-bottom:50px;
+
+    font-size:1.1rem;
+}
+
+.beneficios-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.beneficio{
+
+    background:#151122;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    border:1px solid rgba(0,212,255,.15);
+}
+
+.beneficio:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(0,212,255,.3);
+}
+
+.beneficio i{
+
+    font-size:60px;
+
+    color:#00d4ff;
+
+    margin-bottom:20px;
+}
+
+.beneficio h3{
+
+    margin-bottom:15px;
+
+    font-size:1.4rem;
+}
+
+.beneficio p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+}
+.btn-case{
+
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#7b2cbf;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.imagen-proyecto img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 0 30px rgba(123,44,191,.4);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.proyecto-destacado{
+
+    grid-template-columns:1fr;
+}
+
+.hero-text h1{
+
+    font-size:2.8rem;
+}
+
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#090511;
+color:white;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.80)
+),
+url("https://images3.alphacoders.com/810/thumb-1920-810168.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.hero-content{
+max-width:800px;
+padding:20px;
+}
+
+.hero h1{
+font-size:5rem;
+margin-bottom:20px;
+color:#00e5ff;
+
+text-shadow:
+0 0 10px #00e5ff,
+0 0 20px #00e5ff,
+0 0 40px #00e5ff;
+}
+
+.hero p{
+font-size:1.3rem;
+margin-bottom:30px;
+}
+
+.btn{
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+background:#00d4ff;
+color:black;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px #00d4ff;
+}
+
+/* TARJETAS */
+
+.cards-section{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards-section h2{
+margin-bottom:40px;
+font-size:2.5rem;
+}
+
+.cards-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+width:260px;
+background:#161020;
+padding:30px;
+border-radius:20px;
+transition:.4s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #7b2cbf;
+}
+
+.card i{
+font-size:60px;
+margin-bottom:20px;
+color:#c77dff;
+}
+
+/* TIMELINE */
+
+.timeline{
+padding:80px 20px;
+text-align:center;
+}
+
+.timeline h2{
+margin-bottom:40px;
+font-size:2.5rem;
+}
+
+.timeline-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.evento{
+background:#161020;
+padding:25px;
+border-radius:15px;
+width:220px;
+}
+
+.evento span{
+font-size:1.5rem;
+font-weight:bold;
+color:#c77dff;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:80px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.stat{
+background:#161020;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.stat h3{
+font-size:3rem;
+color:#00d4ff;
+}
+
+/* APRENDER */
+
+.aprender{
+padding:100px 20px;
+text-align:center;
+}
+
+.aprender h2{
+color:#00e5ff;
+font-size:3rem;
+margin-bottom:60px;
+}
+
+.learning-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.learning-card{
+background:linear-gradient(
+145deg,
+#10192d,
+#1b2946
+);
+
+padding:35px;
+border-radius:20px;
+
+border:1px solid rgba(0,229,255,.2);
+
+transition:.4s;
+
+position:relative;
+overflow:hidden;
+}
+
+.learning-card::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+
+width:200%;
+height:200%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(0,229,255,.15),
+transparent
+);
+
+transform:rotate(25deg);
+
+transition:.6s;
+}
+
+.learning-card:hover::before{
+left:100%;
+}
+
+.learning-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,229,255,.4);
+}
+
+.learning-card i{
+font-size:70px;
+color:#00e5ff;
+margin-bottom:20px;
+}
+
+.learning-card h3{
+font-size:1.5rem;
+margin-bottom:15px;
+color:white;
+}
+
+.learning-card p{
+color:#d6d6d6;
+line-height:1.7;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+padding:30px;
+text-align:center;
+background:#0a0612;
+border-top:2px solid #7b2cbf;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+.cards-container{
+flex-direction:column;
+align-items:center;
+}
+
+.timeline-container{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+.aprender{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.aprender h2{
+    color:#00e5ff;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+.learning-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.learning-card{
+    background:#0d1324;
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+    border:1px solid rgba(0,229,255,.2);
+}
+
+.learning-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(0,229,255,.4);
+}
+
+.learning-card i{
+    font-size:60px;
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+.learning-card h3{
+    margin-bottom:15px;
+    color:white;
+}
+
+.learning-card p{
+    color:#cfcfcf;
+    line-height:1.6;
+}

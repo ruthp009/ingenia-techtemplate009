@@ -1,0 +1,466 @@
+/* ==========================
+   CONFIGURACIÓN GENERAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090511;
+    color:white;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.75)
+    ),
+    url("https://server.wallpaperalchemy.com/storage/wallpapers/169/hollow-knight-4k-knight-wallpaper-card.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    color:#d9d9d9;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:15px 30px;
+
+    background:#7b2cbf;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#9d4edd;
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   INTRO
+========================== */
+
+.intro{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.intro h2{
+    font-size:2.5rem;
+    color:#00e5ff;
+    margin-bottom:25px;
+}
+
+.intro p{
+    max-width:900px;
+    margin:auto;
+    color:#d9d9d9;
+}
+
+/* ==========================
+   TARJETAS PRINCIPALES
+========================== */
+
+.cards-section{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.cards-section h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.cards-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    width:260px;
+
+    background:#161020;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #7b2cbf;
+}
+
+.card i{
+    font-size:60px;
+    color:#c77dff;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ==========================
+   TIMELINE
+========================== */
+
+.timeline{
+    padding:90px 20px;
+    text-align:center;
+}
+
+.timeline h2{
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.timeline-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.evento{
+    background:#161020;
+
+    width:220px;
+
+    padding:25px;
+
+    border-radius:20px;
+}
+
+.evento span{
+    font-size:1.7rem;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+/* ==========================
+   ESTADÍSTICAS
+========================== */
+
+.stats{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+    padding:80px 20px;
+}
+
+.stat{
+    background:#161020;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.stat h3{
+    font-size:3rem;
+    color:#00e5ff;
+}
+
+/* ==========================
+   APRENDER
+========================== */
+
+.aprender{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.aprender h2{
+    color:#00e5ff;
+    font-size:3rem;
+    margin-bottom:60px;
+}
+
+.learning-cards{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.learning-card{
+    background:#10192d;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    border:1px solid rgba(0,229,255,.2);
+}
+
+.learning-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(0,229,255,.4);
+}
+
+.learning-card i{
+    font-size:65px;
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+.learning-card h3{
+    margin-bottom:15px;
+}
+
+/* ==========================
+   TECNOLOGÍAS EMERGENTES
+========================== */
+
+.emergentes{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.emergentes h2{
+    color:#00e5ff;
+    margin-bottom:50px;
+}
+
+.emergentes-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.emergente-card{
+    background:#161020;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:.4s;
+}
+
+.emergente-card:hover{
+    transform:translateY(-10px);
+}
+
+.emergente-card i{
+    font-size:55px;
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   QUIZ
+========================== */
+
+.quiz{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.quiz h2{
+    margin-bottom:30px;
+    color:#00e5ff;
+}
+
+.quiz-box{
+    max-width:700px;
+    margin:auto;
+
+    background:#161020;
+
+    padding:40px;
+
+    border-radius:20px;
+}
+
+.quiz button{
+    display:block;
+
+    width:100%;
+
+    margin:15px 0;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#7b2cbf;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.quiz button:hover{
+    background:#9d4edd;
+}
+
+#resultadoQuiz{
+    margin-top:20px;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+/* ==========================
+   BOTÓN SUBIR
+========================== */
+
+#btnTop{
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#00e5ff;
+
+    color:black;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    display:none;
+
+    z-index:999;
+}
+
+#btnTop:hover{
+    transform:scale(1.1);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    margin-top:80px;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#0a0612;
+
+    border-top:2px solid #7b2cbf;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .cards-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .timeline-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .aprender h2,
+    .cards-section h2,
+    .timeline h2,
+    .intro h2{
+        font-size:2rem;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registro - Ingenia Tech</title>
+
+    <link rel="stylesheet" href="/login de registro.html/login.css">
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <!-- ========================= -->
+        <!-- LOGIN -->
+        <!-- ========================= -->
+        <div class="form-container login-container">
+
+            <form>
+
+                <h2>Login</h2>
+
+                <!-- Correo para iniciar sesión -->
+                <input
+                    type="email"
+                    id="loginCorreo"
+                    placeholder="Correo electrónico"
+                    required>
+
+                <!-- Contraseña -->
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="loginPass"
+                        placeholder="Contraseña"
+                        required>
+
+                    <span onclick="togglePassword('loginPass')">
+                        😉
+                    </span>
+
+                </div>
+
+                <!-- Botón Login -->
+                <button
+                    type="button"
+                    onclick="iniciarSesion()">
+
+                    Iniciar Sesión
+
+                </button>
+
+                <p>
+
+                    ¿No tienes cuenta?
+
+                    <a href="#"
+                       onclick="mostrarRegistro()">
+
+                        Registrarse
+
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- REGISTRO -->
+        <!-- ========================= -->
+        <div class="form-container register-container">
+
+            <form>
+
+                <h2>Crear Cuenta</h2>
+
+                <!-- Nombre -->
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre de usuario"
+                    required>
+
+                <!-- Correo -->
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="Correo electrónico"
+                    required>
+
+                <!-- Contraseña -->
+                <div class="password-box">
+
+                    <input
+                        type="password"
+                        id="registerPass"
+                        placeholder="Contraseña"
+                        required>
+
+                    <span onclick="togglePassword('registerPass')">
+                        😒
+                    </span>
+
+                </div>
+
+                <!-- Botón Registrar -->
+                <button
+                    type="button"
+                    onclick="registrarUsuario()">
+
+                    Registrarse
+
+                </button>
+
+                <p>
+
+                    ¿Ya tienes cuenta?
+
+                    <a href="#"
+                       onclick="mostrarLogin()">
+
+                        Iniciar Sesión
+
+                    </a>
+
+                </p>
+
+            </form>
+
+        </div>
+
+        <!-- ========================= -->
+        <!-- PANEL DERECHO -->
+        <!-- ========================= -->
+        <div class="overlay-container">
+
+            <div class="overlay">
+
+                <div class="overlay-panel overlay-left">
+
+                    <h1>¡Bienvenido!</h1>
+
+                    <p>
+                        Inicia sesión para continuar
+                    </p>
+
+                </div>
+
+                <div class="overlay-panel overlay-right">
+
+                    <h1>INGENIA TECH</h1>
+
+                    <p>
+                        Innovación, tecnología y aprendizaje
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+ <script src="/login de registro.html/script de la pagina.js"></script>
+
+</body>
+
+</html>
